@@ -1,77 +1,65 @@
-Automated sentiment analysis and text summarization
+**Automated sentiment analysis and text summarization**
 
-Overview
+**Overview**
 This Chrome extension allows users to perform sentiment analysis and text summarization on selected text from a webpage. It features two main functionalities:
 
 List View: Provides a summary of selected text, displaying key points in a list format.
 Summarizer and Sentiment View: Analyzes both the sentiment of the selected text (positive, negative, neutral) and provides a concise summary of the content.
 The extension leverages the Hugging Face API for summarization and integrates sentiment analysis using the Sentiment.js library. It provides results through a popup interface in the browser.
 
-Features
-List View
+**Features:**
+List View:
 Context menu option for summarizing selected text in a list format.
 Summarized text is broken into sentences and displayed as an HTML list in a popup.
 Utilizes the Hugging Face BART-Large-CNN model for summarization.
-Summarizer and Sentiment View
+
+Summarizer and Sentiment View:
 Performs both sentiment analysis and text summarization of the selected content.
 Displays the sentiment (positive, negative, neutral) and the summary in a popup.
 Backend sentiment analysis handled by the Sentiment.js library.
 Summarization provided via the Hugging Face BART-Large-CNN model.
-Installation
-Clone the repository to your local machine.
-Open Chrome and navigate to chrome://extensions/.
-Enable Developer mode (top right).
-Click Load unpacked and select the directory containing the project files.
-The extension will be installed and ready to use.
-Usage
-List View
+
+**Usage:**
+List View:
 Highlight any text on a webpage.
 Right-click and select View List from the context menu.
 A popup will open, displaying the summarized content as a list of key sentences.
-Summarizer and Sentiment View
+
+Summarizer and Sentiment View:
 Highlight any text on a webpage.
 Right-click and select Analyze and Summarize Selection from the context menu.
 The popup will display both the sentiment of the selected text and a concise summary.
 Alternatively, open the popup from the browser toolbar, enter custom text, and click Analyze and Summarize.
 
-API Keys
-The extension uses the Hugging Face BART-Large-CNN model for text summarization. Ensure that you replace the API key in the background.js file with your own:
+**API Keys:**
+The extension uses the Hugging Face BART-Large-CNN model for text summarization. Ensure that you replace the API key in the background.js file with your own.
 
-javascript
-Copy code
-'Authorization': 'Bearer YOUR_HUGGING_FACE_API_KEY'
-Backend Setup (for Summarizer and Sentiment View)
-To enable sentiment analysis, you'll need to set up a simple Node.js backend:
-
-Install Node.js and npm on your system.
-Navigate to the server folder and install dependencies:
-bash
-Copy code
-npm install
-Start the server:
-bash
-Copy code
-node server.js
-The server will run on http://localhost:3001/ and handle sentiment analysis requests.
-Technologies Used
+**Technologies Used:**
 Hugging Face API: For text summarization.
 Sentiment.js: For sentiment analysis.
 Chrome Extensions API: For context menu and storage management.
 Node.js: Backend for sentiment analysis.
-Permissions
+
+**Permissions:**
 The extension requires the following permissions:
 
 activeTab: To interact with the current webpage.
 contextMenus: To create context menu options.
 storage: To store and retrieve summaries and sentiment analysis results.
-Files Structure
+
+**Files Structure:**
 background.js: Manages API requests, context menus, and content interactions.
 popup.html: Displays the results (summary and sentiment) in the popup window.
 popup.js: Handles interactions between the popup and the background script.
 server.js: Backend Node.js server for performing sentiment analysis using Sentiment.js.
-Future Improvements
+
+**Future Improvements:**
 Enhance summarization to handle larger text chunks more efficiently.
 Add support for multiple languages for both summarization and sentiment analysis.
-Improve the UI of the popup for better readability and user experience.
-License
-This project is licensed under the MIT License.
+
+**Result:**
+![image](https://github.com/user-attachments/assets/f7287fd1-40ec-43b8-8fcf-176a32389375)
+![image](https://github.com/user-attachments/assets/87665645-3a28-4313-a1f8-271d0f7b5f68)
+![image](https://github.com/user-attachments/assets/a4338b71-f25f-4117-8c79-e9dc5ff821bf)
+
+

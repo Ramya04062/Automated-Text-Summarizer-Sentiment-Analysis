@@ -1,4 +1,4 @@
-**Automated sentiment analysis and text summarization for long social media comments**
+**AUTOMATED SUMMARIZATION AND SENTIMENT ANALYSIS FOR LONG SOCIAL MEDIA COMMENTS**
 
 **Overview**
 This Chrome extension allows users to perform sentiment analysis and text summarization on selected text from a webpage. It features two main functionalities:

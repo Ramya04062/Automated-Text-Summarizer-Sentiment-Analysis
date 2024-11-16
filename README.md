@@ -58,8 +58,10 @@ Enhance summarization to handle larger text chunks more efficiently.
 Add support for multiple languages for both summarization and sentiment analysis.
 
 **Result:**
-![image](https://github.com/user-attachments/assets/f7287fd1-40ec-43b8-8fcf-176a32389375)
-![image](https://github.com/user-attachments/assets/87665645-3a28-4313-a1f8-271d0f7b5f68)
-![image](https://github.com/user-attachments/assets/a4338b71-f25f-4117-8c79-e9dc5ff821bf)
+![image](https://github.com/user-attachments/assets/3e86dfc5-766c-44db-b6c8-a2a9d7903a78)
+
+
+![image](https://github.com/user-attachments/assets/c4cfd9ed-b30b-4dbe-9c50-38a0c59018ee)
+
 
 

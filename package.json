@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-summary": "^1.1.0",
+    "sentiment": "^5.0.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "folder15",
+  "version": "1.0.0",
+  "main": "background.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
